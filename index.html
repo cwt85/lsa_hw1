@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我完成了</title>
+  </head>
+  <body style="Background-color: #f0f0f0;">
+    <h1>113213030 陳瑋廷</h1>
+    <h2>我完成了，請看下圖</h2>
+    <img src="image/done.png" alt="完成圖" width="1200" />
+    <br />
+    <h2>印象最深刻的一題</h2>
+    <img src="image/frog.png" alt="最有印象的題目" width="1200" />
+    <p style="font-size: 18px">
+      這題是考關於linux的路徑，當我看到的時候其實有點無從下手，但在查詢網路與詢問AI之後，
+      發現那三個點(...)可以當作合法的路徑顯示，並且這當中還有空白要使用反斜線去跳脫他，
+      這當中我也使用
+      <code>ls -lab</code> 指令來查看檔案的詳細資訊，把檔名中的特殊字元用 escape
+      形式顯示出來 因為檔案中有空白更容易辨認，最後我成功找到空白的地方， 並使用
+      <code>cat "./.../ /. .the flag.txt"</code> 解開這個題目。
+    </p>
+    <button
+      id="mybtn"
+      onclick="
+        window.location.href =
+          'https://youtu.be/dQw4w9WgXcQ?si=rdHQsA6IAdVsfcbU'
+      "
+      target="_blank"
+    >
+      返回首頁
+    </button>
+    <style>
+      #mybtn {
+        background-color: gray; /* 綠色背景 */
+        border: none; /* 無邊框 */
+        color: white; /* 白色文字 */
+        padding: 15px 32px; /* 上下15px，左右32px的內邊距 */
+        text-align: center; /* 文字置中 */
+        display: inline-block; /* 行內塊元素 */
+        font-size: 16px; /* 字體大小16px */
+        margin: 4px 2px; /* 上下4px，左右2px的外邊距 */
+        cursor: pointer; /* 鼠標變成手型 */
+      }
+      code {
+        background-color: #f1f1f1;
+        color: #d63384;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+      }
+    </style>
+  </body>
+</html>
